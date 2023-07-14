@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="banner">Hello, This is the head tag...</h1>
+    <h1 class="call">Hello World</h1>
+    <h1 class="call">Hello world</h1>
+    <h1 class="call">Hello world</h1>
+    <script>
+      // let ht=  document.getElementById("banner")
+      // console.log(ht);
+      // ht.style.color="black";
+      // ht.innerHTML="This is changed to inner html............"
+      // ht.style.backgroundColor="blue"
+      // ht.style.background="green"
+//selecting element by class name....
+//let bc=document.getElementsByClassName('call')
+//console.log(typeof bc);
+// for(let element of bc)
+// {
+//   console.log(element);
+//   element.style.color="blue"
+//   element.style.backgroundColor="black"
+// }
+
+
+// selecting element with the help of css selcctor
+//querySelector -single element
+//querySelectorAll- list of elements
+
+let els=document.querySelectorAll(".call");
+for(let e of els){
+  console.log(e)
+  e.style.color="purple"
+  e.style.backgroundColor="orange"
+}
+
+   
+      
+
+    </script>
+</body>
+</html>
